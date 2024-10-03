@@ -3,26 +3,73 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Black Goose Bistro</title>
+    <title>Dig Dug</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
     <style>
+        main, header, footer{
+            background-color: #ECE4D5;
+            border: 1px solid black;
+            margin: 0 auto;
+            width: 80vw
+        }
+        body {
+            background-color:#54263F;
+            font-family: Helvetica, Arial, sans-serif
+        }
         h1 { 
-            color:red;
-            font-family: sans-serif;
-            border-bottom: 1px solid blue;
-            }
+            color:#AE303B;
+            font-family: "Pixelify Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-size: 50px;
+            text-align: center;
+        }
+        h2 {
+            margin-left: 25px;
+            color:#242799
+        }
+        p {
+            margin-left: 50px;
+        }
         blockquote { 
             background-color: lightgray;
             padding: 1rem;
-            }
+        }
+        img{
+            border: 5px, double, #197BBD;
+        }
+        img.over{
+            float:right; margin: 0 12px;
+            border-style: none;
+        }
+        footer{
+            background-color: #bb7076;
+        }
+        a{color: #197BBD}
+        a:visited{color:#843B62}
+        a:focus{color: #3397da}
+        a:hover{color: #3397da}
+        a:active{color: #e263a7}
     </style>
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
 </head>
 
 <body>
     <header>
+        <center>
+            <object type="image/svg+xml" width="500" height="120" data="images/dig-dug.svg">
+                <img src="dig-dug.png" alt="Dig Dug Logo">
+            </object>
+        </center>
+        <!--<img src="images/dig-dug.png" alt="" height="108" width="356">-->
     <h1>Dig Dug</h1>
     </header>
     <main>
-    <img src="dig-dug-burnt.png" alt="">
+    <img src="images/dig-dug-burnt.png" alt="">
+    <br>
+    <a href="big/pic1.html">Big Image</a>
     <hr>
     <h2>Publishing Info</h2>
 
@@ -34,19 +81,19 @@
     
     <hr>
     <h2>Description</h2>
-
-    Dig Dug is a 1-2 player arcade game in which you have to use your shovel to dig your way through the earth. Stopping
-    you from doing this are two monsters, called Pooka and Fygar, who will continually chase you around. The only weapon
-    that you carry is an air pump, which you can use to inflate the monsters to the point where they explode. [...]
-
+    <p>
+        Dig Dug is a 1-2 player arcade game in which you have to use your shovel to dig your way through the earth. Stopping
+        you from doing this are two monsters, called Pooka and Fygar, who will continually chase you around. The only weapon
+        that you carry is an air pump, which you can use to inflate the monsters to the point where they explode. [...]
+    </p>
     <hr>
     <h2>Game Categories</h2>
-
-    <b>Genre:</b> Action<br>
-    <b>Perspective:</b> Side view<br>
-    <b>Visual:</b> Fixed<br>
-    <b>Gameplay:</b> Arcade
-
+    <p>
+        <b>Genre:</b> Action<br>
+        <b>Perspective:</b> Side view<br>
+        <b>Visual:</b> Fixed<br>
+        <b>Gameplay:</b> Arcade
+    </p>
     <hr>
     <h2>Quote</h2>
     <blockquote>
@@ -54,12 +101,13 @@
         had a good imagination. And maybe they were into horror movies too.
         -- <a href="https://www.mobygames.com/mobyrank/source/sourceId,540/">Moby Games</a>
     </blockquote>
-    <hr>
     </main>
-    <footer>
-    <h3>Source</h3>
-
-    <a href="https://www.mobygames.com/game/arcade/dig-dug">Dig Dug</a>
+    <footer id="Source">
+    <h2>Source</h2>
+    <p><a href="https://www.mobygames.com/game/arcade/dig-dug" target="_blank">Moby Games: Dig Dug</a>
+    <img class="over" src="images/fygar_inflate.png">
+    <br><br><br><br><br><br>
+    </p>
     </footer>
 </body>
 
