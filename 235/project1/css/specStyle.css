@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Verdana', sans-serif;
+    background-color: #f7f6f3;
+    padding: 20px;
+    color: #333;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+        "headerImg header header header"
+        "top-rated top-rated first-love first-love"
+        "subaru-drivers subaru-drivers first-love first-love"
+        "subaru-drivers subaru-drivers rainbow rainbow";
+    grid-gap: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+#headerImg {
+    grid-area: headerImg;
+    height: auto;
+    display: block;
+    margin: 10px 0;
+}
+
+.header {
+    grid-area: header;
+    padding: 20px 0;
+}
+
+.header h1 {
+    font-size: 60px;
+    font-weight: 500;
+    text-align: left;
+    transform: scaleY(1.2);
+    letter-spacing: -2px;
+    margin-bottom: 5px;
+    color: rgb(187, 175, 132);
+}
+
+.header p {
+    font-size: 14px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    background-color: #605b92;
+    transform: scaleY(1.1);
+    text-align: right;
+    margin-left: 20%;
+    display: inline-block;
+    padding: 1px 10px;
+    font-weight: normal;
+    color: rgb(255, 255, 255);
+}
+
+#top-rated, #first-love, #rainbow, #subaru-drivers {
+    padding: 1px;
+}
+
+#top-rated {
+    grid-area: top-rated;
+}
+
+#first-love {
+    grid-area: first-love;
+}
+
+#rainbow {
+    grid-area: rainbow;
+}
+
+#subaru-drivers {
+    grid-area: subaru-drivers;
+    background-color: rgb(147, 134, 103);
+}
+
+h2 {
+    color: #3961a1;
+    font-size: 22px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    transform: scaleY(1.2);
+}
+
+p {
+    margin: 10px 0;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+#subaru-drivers h2 {
+    color: white;
+    text-align: right;
+    vertical-align: top;
+    font-weight: normal;
+}
+
+#subaru-drivers p{
+    color:#3961a1;
+    padding:20px
+}
+
+.signature {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.italic {
+    font-style: italic;
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+}
+
+article img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px 0;
+}
+
